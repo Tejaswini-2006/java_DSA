@@ -2,13 +2,37 @@ import java.util.*;
 public class Operator {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        /*System.out.print("Enter the year: ");
-        int a = sc.nextInt();*/
-        System.out.print("Enter the character: ");
-        char b = sc.next().charAt(0);
-        /*System.out.print("Enter the third number: ");
+        System.out.print("Enter the first number: ");
+        int a = sc.nextInt();
+        System.out.print("Enter the second number: ");
         int c = sc.nextInt();
-        if (a%2 == 0){
+        System.out.print("Enter operator (+ - *  / % ): ");
+        char b = sc.next().charAt(0);
+        switch(b){
+            case '+':
+                System.out.println("Addition: "+(a+c));
+                break;
+            case '-':
+                System.out.println("Subtraction: "+(a-c));
+                break;
+            case '*':
+                System.out.println("Multiplication: "+(a*c));
+                break;
+            case '%':
+                System.out.println("Remainder: "+(a%c));
+                break;
+            case '/':
+                if (c!= 0){
+                    System.out.println("Division: " +(a/c));
+                }else{
+                    System.out.println("Zero cannot divide");
+                }
+                break;
+            default:
+                System.out.println("Invalid");
+        }
+
+        /*if (a%2 == 0){
             System.out.println(a + " is even number.");
         }
         else{
@@ -69,5 +93,6 @@ public class Operator {
         else{
             System.out.println("Invalid");
         }*/
+
     }
 }
