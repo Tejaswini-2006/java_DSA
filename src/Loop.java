@@ -4,10 +4,16 @@ public class Loop {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of n: ");
         int  n = sc.nextInt();
-        for (int i = 1; i < 11 ; i++){
+        int s = 0 ;
+        while (n!= 0){
+            s = s + 1;
+            n = n / 10;
+        }
+        System.out.println("No. Of Digit: "+s);
+        /*for (int i = 1; i < 11 ; i++){
             System.out.println(n+" x " + i + " = " + (n*i));
         }
-        /*int s= 0 ;
+        int s= 0 ;
        for (int i = 0 ; i <= n ; i++){
            s = s + i ;
        }
