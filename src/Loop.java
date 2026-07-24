@@ -4,6 +4,21 @@ public class Loop {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the value of n: ");
         int  n = sc.nextInt();
+        int f = 1 ;
+        if (n == 1 || n == 0){
+            System.out.println("Factorial of "+n +" is 1.");
+        }else{
+            for(int i = 1; i <= n; i++){
+                f = f * i ;
+            }
+            System.out.println("Factorial of " + n + " is "+ f);
+        }
+
+        /*while (n !=0){
+            int r = n% 10 ;
+            n = n/10;
+            System.out.print(r);
+        }
         int s = 0 ;
         while(n != 0){
             int r = n %10 ;
@@ -11,7 +26,7 @@ public class Loop {
             n = n/10;
         }
         System.out.println("Sum of Digit: "+s);
-        /*while (n!= 0){
+        while (n!= 0){
             s = s + 1;
             n = n / 10;
         }
