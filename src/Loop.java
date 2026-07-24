@@ -5,12 +5,18 @@ public class Loop {
         System.out.print("Enter the value of n: ");
         int  n = sc.nextInt();
         int s = 0 ;
-        while (n!= 0){
+        while(n != 0){
+            int r = n %10 ;
+            s = s + r ;
+            n = n/10;
+        }
+        System.out.println("Sum of Digit: "+s);
+        /*while (n!= 0){
             s = s + 1;
             n = n / 10;
         }
         System.out.println("No. Of Digit: "+s);
-        /*for (int i = 1; i < 11 ; i++){
+        for (int i = 1; i < 11 ; i++){
             System.out.println(n+" x " + i + " = " + (n*i));
         }
         int s= 0 ;
