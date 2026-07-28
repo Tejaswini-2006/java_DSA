@@ -10,10 +10,15 @@ public class Arrays {
             arr[i] = sc.nextInt();
         }
         int t = arr[0];
-        for(int i = 0 ; i < size ; i++){
+        /*for(int i = 0 ; i < size ; i++){
             if(arr[i]>t){
                 t = arr[i];
             }
-        }System.out.println("Array largest elements " + t);
+        }System.out.println("Array largest elements " + t);*/
+        for(int i = 0;i < size;i++){
+            if(arr[i]<t){
+                t = arr[i];
+            }
+        }System.out.println("Smallest array element: " + t);
     }
 }
