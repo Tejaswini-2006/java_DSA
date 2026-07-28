@@ -9,16 +9,21 @@ public class Arrays {
         for(int i = 0; i < size;i++){
             arr[i] = sc.nextInt();
         }
-        int t = arr[0];
-        /*for(int i = 0 ; i < size ; i++){
+        /*int t = arr[0];
+        for(int i = 0 ; i < size ; i++){
             if(arr[i]>t){
                 t = arr[i];
             }
-        }System.out.println("Array largest elements " + t);*/
+        }System.out.println("Array largest elements " + t);
         for(int i = 0;i < size;i++){
             if(arr[i]<t){
                 t = arr[i];
             }
-        }System.out.println("Smallest array element: " + t);
+        }System.out.println("Smallest array element: " + t);*/
+        int sum = 0 ;
+        for(int i = 0 ;i<size;i++){
+            sum = sum + arr[i];
+        }
+        System.out.print("Sum of Array: "+ sum );
     }
 }
