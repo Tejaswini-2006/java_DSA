@@ -10,7 +10,7 @@ public class Number_Program {
         for(int i = 1 ; i<= b;i++){
             p = p * a ;
         }
-        System.out.println(a+" power " + b + " is "+ p);*/
+        System.out.println(a+" power " + b + " is "+ p);
         int a = og ;
         int rev = 0 ;
         while(a != 0){
@@ -23,7 +23,8 @@ public class Number_Program {
         }
         else{
             System.out.println( og + " is not a palindrome number.");
-        }
+        }*/
+        
         sc.close();
     }
 }
