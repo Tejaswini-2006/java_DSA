@@ -9,11 +9,27 @@ public class Arrays {
         for(int i = 0; i < size;i++){
             arr[i] = sc.nextInt();
         }
-        System.out.println("Reverse Array are : ");
+        System.out.print("Enter the element which you want to search in array: ");
+        int e = sc.nextInt();
+        int flag = 0;
+        int t = 0;
+        for(int i = 0;i < size;i++ ){
+            if (arr[i] == e){
+                flag = 1;
+                t = i;
+            }
+        }
+        if( flag == 1){
+            System.out.print(e + " is present in array at " + t + " position");
+        }
+        else{
+            System.out.print(e + " is not present in array");
+        }
+        /*System.out.println("Reverse Array are : ");
         for(int i = size - 1; i >= 0;i--){
             System.out.print(arr[i] + " ");
         }
-        /*int t = arr[0];
+        int t = arr[0];
         for(int i = 0 ; i < size ; i++){
             if(arr[i]>t){
                 t = arr[i];
