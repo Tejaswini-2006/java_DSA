@@ -9,7 +9,15 @@ public class Arrays {
         for(int i = 0; i < size;i++){
             arr[i] = sc.nextInt();
         }
-        System.out.print("Enter the element which you want to search in array: ");
+        int c = 0 ;
+        for(int i = 0;i < size;i++){
+            if(arr[i]%2==0){
+                c = c +1;
+            }
+        }
+        System.out.println("Count of even number in array is " + c);
+        System.out.print("Count of odd number in array is " + (size -c));
+        /*System.out.print("Enter the element which you want to search in array: ");
         int e = sc.nextInt();
         int flag = 0;
         int t = 0;
@@ -25,7 +33,7 @@ public class Arrays {
         else{
             System.out.print(e + " is not present in array");
         }
-        /*System.out.println("Reverse Array are : ");
+        System.out.println("Reverse Array are : ");
         for(int i = size - 1; i >= 0;i--){
             System.out.print(arr[i] + " ");
         }
