@@ -22,11 +22,13 @@ public class Arrays {
                 }
             }
         }
-        System.out.print("Array in ascending order: ");
+        System.out.println("Second largest element in array is  " + arr[size - 2]);
+
+        /*System.out.print("Array in ascending order: ");
         for(int i = 0;i< size;i++){
             System.out.print(arr[i] + " ");
         }
-        /*int c = 0 ;
+        int c = 0 ;
         for(int i = 0;i < size;i++){
             if(arr[i]%2==0){
                 c = c +1;
