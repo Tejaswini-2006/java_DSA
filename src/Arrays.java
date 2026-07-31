@@ -9,7 +9,24 @@ public class Arrays {
         for(int i = 0; i < size;i++){
             arr[i] = sc.nextInt();
         }
-        int c = 0 ;
+        System.out.print("Before sorting the array: ");
+        for(int i = 0;i< size;i++){
+            System.out.print(arr[i] + " ");
+        }
+        for(int i = 0;i< size;i++){
+            for(int j = i+1;j< size;j++){
+                if(arr[i] > arr[j]){
+                    int t = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = t;
+                }
+            }
+        }
+        System.out.print("Array in ascending order: ");
+        for(int i = 0;i< size;i++){
+            System.out.print(arr[i] + " ");
+        }
+        /*int c = 0 ;
         for(int i = 0;i < size;i++){
             if(arr[i]%2==0){
                 c = c +1;
@@ -17,7 +34,7 @@ public class Arrays {
         }
         System.out.println("Count of even number in array is " + c);
         System.out.print("Count of odd number in array is " + (size -c));
-        /*System.out.print("Enter the element which you want to search in array: ");
+        System.out.print("Enter the element which you want to search in array: ");
         int e = sc.nextInt();
         int flag = 0;
         int t = 0;
