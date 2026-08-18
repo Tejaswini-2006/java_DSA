@@ -9,7 +9,8 @@ public class Arrays {
         for(int i = 0; i < size;i++){
             arr[i] = sc.nextInt();
         }
-        System.out.print("Before sorting the array: ");
+
+        /*System.out.print("Before sorting the array: ");
         for(int i = 0;i< size;i++){
             System.out.print(arr[i] + " ");
         }
@@ -23,8 +24,7 @@ public class Arrays {
             }
         }
         System.out.println("Second largest element in array is  " + arr[size - 2]);
-
-        /*System.out.print("Array in ascending order: ");
+        System.out.print("Array in ascending order: ");
         for(int i = 0;i< size;i++){
             System.out.print(arr[i] + " ");
         }
