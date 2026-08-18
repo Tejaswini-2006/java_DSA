@@ -29,7 +29,7 @@ public class Functions {
         int n = sc.nextInt();
         System.out.println("Sum of all odd numbers from 1 to " + n + " is " + SumOfOdd(n));
 
-    }*/
+    }
     public static void GreaterNumber(int a , int b){
         if ( a > b)
             System.out.println(a + " is greater than " + b);
@@ -43,5 +43,15 @@ public class Functions {
         System.out.println("Enter the 2nd number: ");
         int y = sc.nextInt();
         GreaterNumber(x,y);
+    }*/
+    public static double Circumference(int r){
+        double c = 2 * 3.14 * r ;
+        return c ;
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the radius of Circle: ");
+        int radius = sc.nextInt();
+        System.out.println("Circumference of Circle is " + Circumference(radius));
     }
 }
