@@ -43,7 +43,7 @@ public class Functions {
         System.out.println("Enter the 2nd number: ");
         int y = sc.nextInt();
         GreaterNumber(x,y);
-    }*/
+    }
     public static double Circumference(int r){
         double c = 2 * 3.14 * r ;
         return c ;
@@ -53,5 +53,17 @@ public class Functions {
         System.out.println("Enter the radius of Circle: ");
         int radius = sc.nextInt();
         System.out.println("Circumference of Circle is " + Circumference(radius));
+    }*/
+    public static void Eligible(int age){
+        if(age >18)
+            System.out.println("Eligible for vote");
+        else
+            System.out.println("Not Eligible For vote");
+    }
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your age: ");
+        int a = sc.nextInt();
+        Eligible(a);
     }
 }
